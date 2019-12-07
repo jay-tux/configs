@@ -1,0 +1,792 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[gen_order]
+order = bspwm i3 kernel xkeyboard mpd aur-updates filesystem light pulseaudio memory cpu ld-avg wlan eth netwspdup netwspddn battery temperature date powermenu
+
+[colors]
+;background = ${xrdb:color0:#222}
+background = #226
+background-alt = #44F
+;foreground = ${xrdb:color7:#222}
+foreground = #6fff6f
+foreground-alt = #5f5
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+[clr_hlwn]
+background = #de8100
+foreground = #104900
+alert = #eb8900
+core = #001a3f
+conn = #3f2400
+outp = #192f00
+othr = #8100de
+
+[clr_winter]
+background = #8ffdff
+foreground = #3d6c6c
+alert = #eb8900
+core = #ff908f
+conn = #8fbaff
+outp = #8fff8f
+othr = #fcff8f
+
+[clr_spring]
+background = #33bf00
+foreground = #0e3600
+alert = #eb8900
+core = #8b00bf
+conn = #7962db
+outp = #bf8a00
+othr = #0033bf
+
+[clr_easter]
+background = #8a2be2
+foreground = #3b1260
+alert = #eb8900
+core = #83e22b
+conn = #f2f09b
+outp = #e22b82
+othr = #e2892b
+
+[clr_summer]
+background = #eded18
+foreground = #9c5110
+alert = #eb8900
+core = #87870d
+conn = #cd7178
+outp = #0f9c50
+othr = #daa520
+
+[clr_autumn]
+background = #a82a00
+foreground = #300c00
+alert = #eb8900
+core = #a88e00
+conn = #7da800
+outp = #a8007e
+othr = #00a829
+
+[clr_death]
+background = #242424
+foreground = #c0c0c0
+alert = #eb8900
+core = #191970
+conn = #2f4f4f
+outp = #3f2400
+othr = #005500
+
+[clr_xmas]
+background = #ff2929
+foreground = #70005d
+alert = #eb8900
+core = #23dada
+conn = #31816c
+outp = #d9da23
+othr = #480b0b
+
+[bar/xmas]
+width = 100%
+height = 27
+offset-x = 1%
+offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+bottom = false
+background = ${clr_xmas.background}
+foreground = ${clr_xmas.foreground}
+core = ${clr_xmas.core}
+conn = ${clr_xmas.conn}
+outp = ${clr_xmas.outp}
+othr = ${clr_xmas.othr}
+text = ${colors_halloween.txt}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+
+modules-center = ${gen_order.order}
+
+tray-position = right
+tray-padding = 2
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/death]
+width = 100%
+height = 27
+offset-x = 1%
+offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+bottom = false
+background = ${clr_death.background}
+foreground = ${clr_death.foreground}
+core = ${clr_death.core}
+conn = ${clr_death.conn}
+outp = ${clr_death.outp}
+othr = ${clr_death.othr}
+text = ${colors_halloween.txt}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+
+modules-center = ${gen_order.order}
+
+tray-position = right
+tray-padding = 2
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/autumn]
+width = 100%
+height = 27
+offset-x = 1%
+offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+bottom = false
+background = ${clr_autumn.background}
+foreground = ${clr_autumn.foreground}
+core = ${clr_autumn.core}
+conn = ${clr_autumn.conn}
+outp = ${clr_autumn.outp}
+othr = ${clr_aututmn.othr}
+text = ${colors_halloween.txt}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+
+modules-center = ${gen_order.order}
+
+tray-position = right
+tray-padding = 2
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/summer]
+width = 100%
+height = 27
+offset-x = 1%
+offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+bottom = false
+background = ${clr_summer.background}
+foreground = ${clr_summer.foreground}
+core = ${clr_summer.core}
+conn = ${clr_summer.conn}
+outp = ${clr_summer.outp}
+othr = ${clr_summer.othr}
+text = ${colors_halloween.txt}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+
+modules-center = ${gen_order.order}
+
+tray-position = right
+tray-padding = 2
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/easter]
+width = 100%
+height = 27
+offset-x = 1%
+offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+bottom = false
+background = ${clr_easter.background}
+foreground = ${clr_easter.foreground}
+core = ${clr_easter.core}
+conn = ${clr_easter.conn}
+outp = ${clr_easter.outp}
+othr = ${clr_easter.othr}
+text = ${colors_halloween.txt}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+
+modules-center = ${gen_order.order}
+
+tray-position = right
+tray-padding = 2
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/spring]
+width = 100%
+height = 27
+offset-x = 1%
+offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+bottom = false
+background = ${clr_spring.background}
+foreground = ${clr_spring.foreground}
+core = ${clr_spring.core}
+conn = ${clr_spring.conn}
+outp = ${clr_spring.outp}
+othr = ${clr_spring.othr}
+text = ${colors_halloween.txt}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+
+modules-center = ${gen_order.order}
+
+tray-position = right
+tray-padding = 2
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/winter]
+width = 100%
+height = 27
+offset-x = 1%
+offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+bottom = false
+background = ${clr_winter.background}
+foreground = ${clr_winter.foreground}
+core = ${clr_winter.core}
+conn = ${clr_winter.conn}
+outp = ${clr_winter.outp}
+othr = ${clr_winter.othr}
+text = ${colors_halloween.txt}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+
+modules-center = ${gen_order.order}
+
+tray-position = right
+tray-padding = 2
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/halloween]
+width = 100%
+height = 27
+offset-x = 1%
+offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+bottom = false
+background = ${clr_hlwn.background}
+foreground = ${clr_hlwn.foreground}
+core = ${clr_hlwn.core}
+conn = ${clr_hlwn.conn}
+outp = ${clr_hlwn.outp}
+othr = ${clr_hlwn.othr}
+text = ${colors_halloween.txt}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+
+modules-center = ${gen_order.order}
+
+tray-position = right
+tray-padding = 2
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+; USER MADE MODULE
+[module/light]
+type = custom/script
+exec = ~/.config/light/pbar.sh
+interval = 1
+format-prefix = "LIGHT:"
+format-underline = ${root.core}
+
+[module/netwspdup]
+type = internal/network
+interface = wlo1
+label-connected = "%upspeed:7%"
+format-connected = <label-connected>
+format-connected-prefix = "UP:"
+;format-connected-underline = #000088
+format-connected-underline = ${root.conn}
+
+[module/netwspddn]
+type = internal/network
+interface = wlo1
+label-connected = "%downspeed:7%"   
+format-connected = <label-connected>
+format-connected-prefix = "DN:"
+;format-connected-underline = #000088
+format-connected-underline = ${root.conn}
+
+; USER MADE MODULE
+[module/kernel]
+type = custom/script
+exec = uname -r
+tail = false
+interval = 1024
+format-prefix = "KRNL:"
+format-underline = ${root.core}
+
+; USER MADE MODULE
+[module/aur-updates]
+type = custom/script
+exec = yay -u | wc -l
+interval = 1000
+label = AUR:%output%
+format-underline = ${root.core}
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+[module/xkeyboard]
+type = internal/xkeyboard
+#blacklist-0 = num lock
+
+format-prefix = " "
+format-prefix-foreground = ${root.foreground}
+format-prefix-underline = ${root.othr}
+
+label-layout = %layout%
+label-layout-underline = ${root.othr}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${root.othr}
+label-indicator-underline = ${root.othr}
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+mount-1 = /home
+mount-2 = /efi
+
+label-mounted = %mountpoint%%{F-}: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+format-underline = ${root.othr}
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %index%
+label-focused-background = ${root.background}
+label-focused-underline= ${root.outp}
+label-focused-padding = 2
+
+label-occupied = %index%
+label-occupied-padding = 2
+
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %index%
+label-empty-foreground = ${colors.foreground}
+label-empty-padding = 2
+
+; Separator in between workspaces
+; label-separator = |
+
+[module/i3]
+type = internal/i3
+format = i3:<label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode-padding = 2
+label-mode-foreground = ${root.foreground}
+label-mode-background = ${root.background}
+
+; focused = Active workspace on focused monitor
+label-focused = %index%
+label-focused-background = #000000 
+label-focused-foreground = #dddddd
+label-focused-underline= ${root.outp}
+label-focused-padding = 2
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %index%
+label-unfocused-padding = 2
+
+; visible = Active workspace on unfocused monitor
+label-visible = %index%
+label-visible-background = ${self.label-focused-background}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %index%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+; Separator in between workspaces
+label-separator = |
+
+[module/mpd]
+type = internal/mpd
+format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+
+icon-prev = >> ️
+icon-stop = <<
+icon-play = |>
+icon-pause = ||
+icon-next = *>
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label> <bar>
+label = BL
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #fff
+bar-indicator-font = 2
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${root.foreground}
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${root.core}
+format-underline = #f90000
+label = CPU:%percentage:2%%
+
+[module/memory]
+#edited
+type = custom/script
+exec = ~/.config/ramswap/polybarmod.sh
+interval = 2
+format-prefix = "- "
+format-prefix-foreground = ${root.core}
+format-underline = #4bffdc
+#original
+#type = internal/memory
+#interval = 2
+#format-prefix = " "
+#format-prefix-foreground = ${root.core}
+#format-underline = #4bffdc
+#label = RAM:%percentage_used%%
+
+[module/wlan]
+type = internal/network
+interface = wlo1
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = #9f78e1
+label-connected = %essid%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = "[1]"
+ramp-signal-1 = "[2]"
+ramp-signal-2 = "[3]"
+ramp-signal-3 = "[4]"
+ramp-signal-4 = "[5]"
+ramp-signal-foreground = ${root.conn}
+
+[module/eth]
+type = internal/network
+interface = enp3s0
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${root.conn}
+label-connected = %local_ip%
+
+;format-disconnected =
+format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 5
+
+date = %Y-%m-%d
+date-alt = " %Y-%m-%d"
+
+time = %I:%M:%S %p
+time-alt = %I:%M:%S %p
+
+format-prefix = 
+format-prefix-foreground = ${root.othr}
+format-underline = #0a6cf5
+
+label = %date% %time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume> <bar-volume>
+label-volume = VOL %percentage%%
+label-volume-foreground = ${root.outp}
+
+label-muted = 🔇 muted
+label-muted-foreground = ${root.outp}
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #000000
+bar-volume-foreground-1 = #000000
+bar-volume-foreground-2 = #000000
+bar-volume-foreground-3 = #000000
+bar-volume-foreground-4 = #000000
+bar-volume-foreground-5 = #000000
+bar-volume-foreground-6 = #000000 
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = #000000
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = ${root.core}
+
+format-discharging = <animation-discharging> <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${root.foreground}
+format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = "  ::"
+ramp-capacity-1 = " :::"
+ramp-capacity-2 = "::::"
+ramp-capacity-foreground = ${root.foreground}
+
+animation-charging-0 = "  :"
+animation-charging-1 = " ::"
+animation-charging-2 = ":::"
+animation-charging-foreground = ${root.foreground}
+animation-charging-framerate = 750
+
+animation-discharging-0 = ":::"
+animation-discharging-1 = " ::"
+animation-discharging-2 = "  :"
+animation-discharging-foreground = ${root.foreground}
+animation-discharging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp> <label>
+format-underline = ${root.core}
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = TMP:%temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = ${colors.foreground}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground}
+
+[module/powermenu]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+
+label-open = 
+label-open-foreground = ${colors.secondary}
+label-close =  cancel
+label-close-foreground = ${colors.secondary}
+label-separator = |
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = reboot
+menu-0-0-exec = menu-open-1
+menu-0-1 = power off
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = cancel
+menu-1-0-exec = menu-open-0
+menu-1-1 = reboot
+menu-1-1-exec = sudo reboot
+
+menu-2-0 = power off
+menu-2-0-exec = sudo poweroff now
+menu-2-1 = cancel
+menu-2-1-exec = menu-open-0
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini
