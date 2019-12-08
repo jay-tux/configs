@@ -1,0 +1,13 @@
+# Jay's Arch Linux Configs
+This repo contains config files for Arch Linux with i3.
+It configures the following modules:
+  1: i3
+  2: polybar (for which some custom modules have been written).
+
+It requires the following modules:
+  1: yay (for the installer)
+  2: Xorg-xinit (X server in general)
+  3: i3 (is installed by the installer)
+  4: polybar (is installed by the installer)
+  5: kitty (default terminal in the config)
+  6: firefox (default browser for the config)
