@@ -100,7 +100,7 @@ alert = #eb8900
 core = #23dada
 conn = #31816c
 outp = #d9da23
-othr = #480b0b
+othr = #915201
 
 [bar/xmas]
 width = 100%
@@ -604,7 +604,6 @@ label = CPU:%percentage:2%%
 type = custom/script
 exec = ~/.config/ramswap/polybarmod.sh
 interval = 2
-format-prefix = "- "
 format-prefix-foreground = ${root.core}
 format-underline = #4bffdc
 #original
