@@ -30,7 +30,7 @@ yay -S deepin-screen-recorder
 yay -S xf86-video-nouveau
 yay -S nvidia-utils
 yay -S nvidia-settings
-ysy -S nvidia-dkms
+yay -S nvidia-dkms
 yay -S libxnvctrl
 yay -S libvdpau
 yay -S neovim
