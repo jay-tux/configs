@@ -13,6 +13,9 @@ yay -S i3-wm
 yay -S polybar 
 yay -S feh 
 yay -S xorg-xrandr
+yay -S i3-dmenu-launcher
+yay -S kitty
+yay -S firefox
 echo "Done"
 
 echo "Copying config files..."

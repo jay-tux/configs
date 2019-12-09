@@ -11,3 +11,6 @@ It requires the following modules:
   4: polybar (is installed by the installer)
   5: kitty (default terminal in the config)
   6: firefox (default browser for the config)
+  7: feh (for the backgrounds)
+  8: i3-dmenu-launcher (alternative for dmenu)
+All modules, except yay, are installed by the installer (./install.sh), which also copies all files to their intended destination
