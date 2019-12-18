@@ -11,4 +11,6 @@ swp_use=`free -b | grep "Swap" | tr -s ' ' | cut -d ' ' -f3`
 swp_fre=`free -b | grep "Swap" | tr -s ' ' | cut -d ' ' -f4`
 swp_prc=`echo "$swp_use / $swp_max * 100" | bc -l`
 
-echo "RAM: ${mem_prc:0:5}%   SWAP: ${swp_prc:0:5}%"
+printf "RAM: %.2f%% ~ " $mem_prc
+printf "SWAP: %.2f%%\n" $swp_prc
+#echo "RAM: ${mem_prc:0:5}%   SWAP: ${swp_prc:0:5}%"
