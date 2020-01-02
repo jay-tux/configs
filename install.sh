@@ -16,6 +16,7 @@ yay -S xorg-xrandr
 yay -S i3-dmenu-launcher
 yay -S kitty
 yay -S firefox
+yay -S jgmenu
 echo "Done"
 
 echo "Copying config files..."

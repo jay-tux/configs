@@ -123,6 +123,7 @@ bindsym $mod+m exec firefox "https://mattermost.zeus.gent" #mattermost: m
 bindsym $mod+Shift+s exec deepin-screenshot #screenshot: Shift s
 bindsym $mod+Shift+u exec firefox "https://ufora.ugent.be" #ufora: Shift u
 bindsym $mod+Shift+y exec firefox "https://youtube.com" #yt: Shift y
+bindsym $mod+z exec jgmenu #jgmenu (aka launcher): win
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.

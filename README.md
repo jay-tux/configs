@@ -12,7 +12,7 @@ It requires the following modules:
   5: kitty (default terminal in the config)
   6: firefox (default browser for the config)
   7: feh (for the backgrounds)
-  8: i3-dmenu-launcher (alternative for dmenu)
+  8: jgmenu (small graphical dmenu variant)
 All modules, except yay, are installed by the installer (./install.sh), which also copies all files to their intended destination
 If wanted, you can run [./other.sh], which install a bunch of other packages as well.
 To run both, simply run [./other.sh -c], which does all you need.
