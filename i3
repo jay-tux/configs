@@ -50,11 +50,11 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
- bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#  bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -122,6 +122,7 @@ bindsym $mod+Shift+m exec firefox "https://messenger.com" #messenger: Shift m
 bindsym $mod+m exec firefox "https://mattermost.zeus.gent" #mattermost: m
 bindsym $mod+Shift+s exec deepin-screenshot #screenshot: Shift s
 bindsym $mod+Shift+u exec firefox "https://ufora.ugent.be" #ufora: Shift u
+bindsym $mod+Shift+y exec firefox "https://youtube.com" #yt: Shift y
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
