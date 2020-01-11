@@ -202,4 +202,5 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 exec_always --no-startup-id /home/jay/polydatebar.sh
+exec_always --no-startup-id tint2
 exec_always --no-startup-id /home/jay/wp.sh
