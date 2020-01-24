@@ -125,6 +125,8 @@ bindsym $mod+Shift+u exec firefox "https://ufora.ugent.be" #ufora: Shift u
 bindsym $mod+Shift+y exec firefox "https://youtube.com" #yt: Shift y
 bindsym $mod+z exec jgmenu #jgmenu (aka launcher): win
 bindsym $mod+b exec firefox "https://beaversinfos.weebly.com" # BEAVER
+bindsym $mod+c exec firefox "https://twitch.tv/kittisusi" #Kitti twitch
+bindsym $mod+n exec firefox "https://twitch.tv/mtgnerdgirl" #nerdgirl twitch
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -203,5 +205,5 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 #exec_always --no-startup-id /home/jay/.config/i3/tint.sh
-exec_always --no-startup-id /home/jay/polydatebar.sh
-exec_always --no-startup-id /home/jay/wp.sh
+exec_always --no-startup-id /home/jay/.config/i3/boot_polybar.sh
+exec_always --no-startup-id /home/jay/.config/i3/boot_wp.sh

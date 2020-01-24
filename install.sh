@@ -28,6 +28,8 @@ cp $dir/boot_wallpaper.sh ~/.config/i3/ 2>/dev/null
 cp $dir/light.sh ~/.config/light 2>/dev/null
 cp $dir/light_polybar.sh ~/.config/light/pbar.sh 2>/dev/null
 cp $dir/ram_swap.sh ~/.config/ramswap/polybarmod.sh 2>/dev/null
+cp $dir/quote.sh ~/.config/polybar/quotes.sh 2>/dev/null
+touch ~/.config/polybar quotes 2>/dev/null
 echo "Done"
 
 echo "Making files executable..."
@@ -36,6 +38,7 @@ chmod u+x ~/.config/i3/boot_wallpaper.sh 2>/dev/null
 chmod u+x ~/.config/light/light.sh 2>/dev/null
 chmod u+x ~/.config/light/pbar.sh 2>/dev/null
 chmod u+x ~/.config/ramswap/polybarmod.sh 2>/dev/null
+chmod u+X ~/.config/polybar/quotes.sh 2>/dev/null
 echo "Done"
 
 echo "Reloading i3..."
