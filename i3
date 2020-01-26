@@ -204,6 +204,7 @@ bindsym $mod+r mode "resize"
 #bar {
 #        status_command i3status
 #}
-#exec_always --no-startup-id /home/jay/.config/i3/tint.sh
-exec_always --no-startup-id /home/jay/.config/i3/boot_polybar.sh
-exec_always --no-startup-id /home/jay/.config/i3/boot_wp.sh
+#exec_always --no-startup-id ~/.config/i3/tint.sh
+exec_always --no-startup-id ~/.config/polybar/boot_polynews.sh
+exec_always --no-startup-id ~/.config/i3/boot_polybar.sh
+exec_always --no-startup-id ~/.config/i3/boot_wallpaper.sh

@@ -441,9 +441,25 @@ font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
+modules-left = news1
 modules-center = quotes
+modules-right = news2
 
 ; USER MADE MODULE
+[module/news1]
+type = custom/script
+exec = ~/.config/polybar/newsmod.sh 1
+interval = 10
+label-background = #600
+label-foreground = #AAA
+
+[module/news2]
+type = custom/script
+exec = ~/.config/polybar/newsmod.sh 2
+interval = 10
+label-background = #600
+label-foreground = #AAA
+
 [module/quotes]
 type = custom/script
 exec = ~/.config/polybar/quotes.sh
