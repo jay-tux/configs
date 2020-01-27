@@ -421,7 +421,7 @@ tray-padding = 2
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[bar/quote]
+[bar/news]
 width = 100%
 height = 27
 offset-x = 1%
@@ -442,7 +442,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = news1
-modules-center = quotes
+modules-center = news3
 modules-right = news2
 
 ; USER MADE MODULE
@@ -456,6 +456,13 @@ label-foreground = #AAA
 [module/news2]
 type = custom/script
 exec = ~/.config/polybar/newsmod.sh 2
+interval = 10
+label-background = #600
+label-foreground = #AAA
+
+[module/news3]
+type = custom/script
+exec = ~/.config/polybar/newsmod.sh 3
 interval = 10
 label-background = #600
 label-foreground = #AAA
