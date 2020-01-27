@@ -1,5 +1,12 @@
 # !/bin/bash
 
+# Arg 1: package manager; default is yay
+if [[ $# = 0 ]] || [[ $1 = "" ]]; then
+	pacman="yay"
+else
+	pacman=$1
+fi
+
 echo "Creating required directories..."
 mkdir ~/.config/i3 2>/dev/null
 mkdir ~/.config/polybar 2>/dev/null
@@ -8,15 +15,15 @@ mkdir ~/.config/ramswap 2>/dev/null
 mkdir ~/wallpaper 2>/dev/null
 echo "Done"
 
-echo "Installing/updating required packages with yay"
-yay -S i3-wm
-yay -S polybar 
-yay -S feh 
-yay -S xorg-xrandr
-yay -S i3-dmenu-launcher
-yay -S kitty
-yay -S firefox
-yay -S jgmenu
+echo "Installing/updating required packages with $pacman"
+$pacman -S i3-wm
+$pacman -S polybar 
+$pacman -S feh 
+$pacman -S xorg-xrandr
+$pacman -S i3-dmenu-launcher
+$pacman -S kitty
+$pacman -S firefox
+$pacman -S jgmenu
 echo "Done"
 
 echo "Copying config files..."
