@@ -24,8 +24,8 @@ Polybar has been customized to contain many other modules:
  1. Light module: shows the intensity of the screen's lighting - works only with the (packaged) xrandr light modifier  
  1. RAM/SWAP module: shows both ram and swap usage in percentage  
  1. Quote module: can read quotes from a file, displaying them at random (not in the current bar)  
-   1. Quotes are expected to be in the ``~/.config/polybar/quotes`` file  
-   1. You need to add ``quotes`` to any bar configuration (replacing the ``news3`` block is the recommended way)  
+  1. Quotes are expected to be in the ``~/.config/polybar/quotes`` file  
+  1. You need to add ``quotes`` to any bar configuration (replacing the ``news3`` block is the recommended way)  
  1. News module: gets news headlines from multiple RSS feeds:  
-   1. Currently, there are three news sites configured: ``BBC`` (module ``news1``), ``Engadget`` (module ``news2``) and ``The Guardian`` (module ``news3``)  
-   1. More can be added easily, and they can be changed easily.  
+  1. Currently, there are three news sites configured: ``BBC`` (module ``news1``), ``Engadget`` (module ``news2``) and ``The Guardian`` (module ``news3``)  
+  1. More can be added easily, and they can be changed easily.  
