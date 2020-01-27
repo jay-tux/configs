@@ -29,7 +29,9 @@ cp $dir/light.sh ~/.config/light 2>/dev/null
 cp $dir/light_polybar.sh ~/.config/light/pbar.sh 2>/dev/null
 cp $dir/ram_swap.sh ~/.config/ramswap/polybarmod.sh 2>/dev/null
 cp $dir/quote.sh ~/.config/polybar/quotes.sh 2>/dev/null
-touch ~/.config/polybar quotes 2>/dev/null
+cp $dir/polynews.sh ~/.config/polybar/newsmod.sh 2>/dev/null
+cp $dir/boot_polynews.sh ~/.config/polybar/boot_polynews.sh 2>/dev/null
+touch ~/.config/polybar/quotes 2>/dev/null
 echo "Done"
 
 echo "Making files executable..."
@@ -39,6 +41,8 @@ chmod u+x ~/.config/light/light.sh 2>/dev/null
 chmod u+x ~/.config/light/pbar.sh 2>/dev/null
 chmod u+x ~/.config/ramswap/polybarmod.sh 2>/dev/null
 chmod u+X ~/.config/polybar/quotes.sh 2>/dev/null
+chmod u+x ~/.config/polybar/newsmod.sh 2>/dev/null
+chmod u+x ~/.config/polybar/boot_polynews.sh 2>/dev/null
 echo "Done"
 
 echo "Reloading i3..."
