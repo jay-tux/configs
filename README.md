@@ -5,7 +5,7 @@ It configures the following modules:
  1. polybar (for which some custom modules have been written).  
 
 It requires the following modules:  
- 1. yay (for the installer)  
+ 1. a package manager (for the installer)  
  1. Xorg-xinit (X server in general)  
  1. Xorg-xrandr (for lighting; done by installer)  
  1. i3 (is installed by the installer)  
@@ -15,7 +15,8 @@ It requires the following modules:
  1. feh (for the backgrounds)  
  1. jgmenu (small graphical dmenu variant)  
   
-All modules, except yay, are installed by the installer (./install.sh), which also copies all files to their intended destination.  
+All modules, except the package manager, are installed by the installer (./install.sh), which also copies all files to their intended destination.  
+IMPORTANT: when running the installation script, be sure to pass as ``$1`` the command for your package manager. If not, the script assumes ``yay`` is your package manager.
 If wanted, you can run [./other.sh], which install a bunch of other packages as well.  
 To run both, simply run [./other.sh -c], which does all you need.  
   
